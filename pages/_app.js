@@ -6,7 +6,7 @@ function App({ Component, pageProps }) {
   return (
     <>
       <Navbar />
-      <main className="min-h-screen">
+      <main className="min-h-screen max-w-2xl ml-auto mr-auto prose py-10 px-6">
         <Component {...pageProps} />
       </main>
       <Footer />
