@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Navbar() {
   return (
     <div className="navbar bg-base-200">
@@ -10,21 +12,21 @@ export default function Navbar() {
           </label>
           <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
             <li>
-              <a>Homepage</a>
+              <Link href="/">Home</Link>
             </li>
             <li>
-              <a>Portfolio</a>
+              <Link href="/handpoke.princess">Sample Profile</Link>
             </li>
             <li>
-              <a>About</a>
+              <Link href="/about">About</Link>
             </li>
           </ul>
         </div>
       </div>
       <div className="navbar-center">
-        <a className="btn btn-ghost normal-case text-xl">
-          tramp<span className="text-secondary">stamp</span>
-        </a>
+        <Link className="btn btn-ghost normal-case text-xl" href="/">
+          tramp<span className="text-primary">stamp</span>
+        </Link>
       </div>
       <div className="navbar-end">
         <button className="btn btn-ghost btn-circle">
