@@ -5,14 +5,28 @@ export default function Footer() {
     <footer className="footer footer-center p-10 bg-base-200 text-base-content rounded">
       <div className="grid grid-flow-row md:grid-flow-col gap-4">
         <Link className="link link-hover" href="/about" children="About" />
-        <Link className="link link-hover" href="/privacy-policy" children="Privacy Policy" />
-        <Link className="link link-hover" href="/terms-of-service" children="Terms & Conditions" />
-        <a className="link link-hover" href="https://github.com/kingjulien1/trampstamp" children="Repository" />
+        <Link
+          className="link link-hover"
+          href="/privacy-policy"
+          children="Privacy Policy"
+        />
+        <Link
+          className="link link-hover"
+          href="/terms-of-service"
+          children="Terms & Conditions"
+        />
+        <a
+          className="link link-hover"
+          href="https://github.com/kingjulien1/trampstamp"
+          children="Repository"
+        />
       </div>
       <div>
-        <a className="text-xs" href="https://github.com/kingjulien1">
-          Made with ❤️ by kingjulien1.
-        </a>
+        <a
+          className="text-xs italic font-mono"
+          href="https://github.com/kingjulien1"
+          children="made with 🫶 by kingjulien1"
+        />
       </div>
     </footer>
   );
